@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Piece — The Grand Journey</title>
+  <meta name="description"
+    content="Set sail on an epic animated journey through the world of One Piece. Explore the Straw Hat crew's bounties and relive the Grand Line's greatest arcs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="main-nav" class="glass-nav">
+    <div class="nav-brand">☠️ STRAW HATS</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#bounty-board">Bounties</a></li>
+      <li><a href="#grand-line">Grand Line</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-layers" id="hero-parallax">
+      <!-- CSS gradient ocean + sky -->
+      <div class="hero-layer hero-sky"></div>
+      <div class="hero-layer hero-sun"></div>
+      <div class="hero-layer hero-clouds" data-speed="0.02"></div>
+      <div class="hero-layer hero-ocean" data-speed="0.04"></div>
+      <div class="hero-layer hero-ship" data-speed="0.06">
+        <!-- SVG Pirate Ship -->
+        <svg class="ship-svg" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Hull -->
+          <path d="M60 220 Q80 280 200 280 Q320 280 340 220 Z" fill="#5c3317" stroke="#3b1f0e" stroke-width="3" />
+          <path d="M80 220 Q90 260 200 260 Q310 260 320 220 Z" fill="#7a4a2a" />
+          <!-- Mast -->
+          <rect x="195" y="60" width="10" height="170" fill="#3b1f0e" rx="3" />
+          <!-- Sail -->
+          <path d="M120 80 Q200 50 200 70 L200 200 Q160 190 120 200 Z" fill="#f5f0e1" stroke="#c9b896"
+            stroke-width="2" />
+          <path d="M200 70 Q200 50 280 80 L280 200 Q240 190 200 200 Z" fill="#f5f0e1" stroke="#c9b896"
+            stroke-width="2" />
+          <!-- Jolly Roger on sail -->
+          <circle cx="200" cy="130" r="25" fill="none" stroke="#1a1a1a" stroke-width="2" />
+          <text x="200" y="137" text-anchor="middle" font-size="28" fill="#1a1a1a">☠</text>
+          <!-- Crow's nest -->
+          <rect x="185" y="50" width="30" height="15" fill="#3b1f0e" rx="2" />
+          <!-- Flag -->
+          <line x1="200" y1="50" x2="200" y2="20" stroke="#3b1f0e" stroke-width="3" />
+          <path d="M200 20 Q220 28 200 36 Q220 44 200 50" fill="#e74c3c" />
+          <!-- Bowsprit -->
+          <line x1="60" y1="220" x2="20" y2="200" stroke="#3b1f0e" stroke-width="5" stroke-linecap="round" />
+          <!-- Windows -->
+          <circle cx="150" cy="240" r="8" fill="#f5c842" opacity="0.7" />
+          <circle cx="200" cy="245" r="8" fill="#f5c842" opacity="0.7" />
+          <circle cx="250" cy="240" r="8" fill="#f5c842" opacity="0.7" />
+        </svg>
+      </div>
+      <div class="hero-layer hero-mist"></div>
+      <!-- Floating particles -->
+      <div class="hero-particles" id="hero-particles"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-tagline animate-on-scroll">— Set Sail for the Ultimate Adventure —</p>
+      <h1 class="hero-title">
+        <span class="title-line animate-on-scroll" data-delay="200">ONE</span>
+        <span class="title-line animate-on-scroll" data-delay="400">PIECE</span>
+      </h1>
+      <p class="hero-subtitle animate-on-scroll" data-delay="600">Wealth. Fame. Power. The man who had everything in
+        this world…<br />The Pirate King, Gold Roger.</p>
+      <a href="#bounty-board" class="hero-cta animate-on-scroll" data-delay="800">View Bounties ⚓</a>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ========== BOUNTY BOARD ========== -->
+  <section id="bounty-board" class="bounty-section">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">WANTED</h2>
+      <p class="section-subtitle">Dead or Alive — The Straw Hat Pirates</p>
+    </div>
+
+    <div class="bounty-grid">
+      <div class="bounty-card animate-on-scroll" data-delay="0">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/luffy.png" alt="Monkey D. Luffy" />
+          </div>
+          <div class="card-name">MONKEY D. LUFFY</div>
+          <div class="card-epithet">"Straw Hat"</div>
+          <div class="card-bounty">฿ 3,000,000,000</div>
+        </div>
+      </div>
+
+      <div class="bounty-card animate-on-scroll" data-delay="80">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/zoro.png" alt="Roronoa Zoro" />
+          </div>
+          <div class="card-name">RORONOA ZORO</div>
+          <div class="card-epithet">"Pirate Hunter"</div>
+          <div class="card-bounty">฿ 1,111,000,000</div>
+        </div>
+      </div>
+
+      <div class="bounty-card animate-on-scroll" data-delay="160">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/nami.png" alt="Nami" />
+          </div>
+          <div class="card-name">NAMI</div>
+          <div class="card-epithet">"Cat Burglar"</div>
+          <div class="card-bounty">฿ 366,000,000</div>
+        </div>
+      </div>
+
+      <div class="bounty-card animate-on-scroll" data-delay="240">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/usopp.png" alt="Usopp" />
+          </div>
+          <div class="card-name">USOPP</div>
+          <div class="card-epithet">"God Usopp"</div>
+          <div class="card-bounty">฿ 500,000,000</div>
+        </div>
+      </div>
+
+      <div class="bounty-card animate-on-scroll" data-delay="320">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/sanji.png" alt="Vinsmoke Sanji" />
+          </div>
+          <div class="card-name">VINSMOKE SANJI</div>
+          <div class="card-epithet">"Black Leg"</div>
+          <div class="card-bounty">฿ 1,032,000,000</div>
+        </div>
+      </div>
+
+      <div class="bounty-card animate-on-scroll" data-delay="400">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/chopper.png" alt="Tony Tony Chopper" />
+          </div>
+          <div class="card-name">TONY TONY CHOPPER</div>
+          <div class="card-epithet">"Cotton Candy Lover"</div>
+          <div class="card-bounty">฿ 1,000</div>
+        </div>
+      </div>
+
+      <div class="bounty-card animate-on-scroll" data-delay="480">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/robin.png" alt="Nico Robin" />
+          </div>
+          <div class="card-name">NICO ROBIN</div>
+          <div class="card-epithet">"Devil Child"</div>
+          <div class="card-bounty">฿ 930,000,000</div>
+        </div>
+      </div>
+
+      <div class="bounty-card animate-on-scroll" data-delay="560">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/franky.png" alt="Franky" />
+          </div>
+          <div class="card-name">FRANKY</div>
+          <div class="card-epithet">"Cyborg"</div>
+          <div class="card-bounty">฿ 394,000,000</div>
+        </div>
+      </div>
+
+      <div class="bounty-card animate-on-scroll" data-delay="640">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/brook.png" alt="Brook" />
+          </div>
+          <div class="card-name">BROOK</div>
+          <div class="card-epithet">"Soul King"</div>
+          <div class="card-bounty">฿ 383,000,000</div>
+        </div>
+      </div>
+
+      <div class="bounty-card animate-on-scroll" data-delay="720">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <img class="avatar-img" src="characters/jinbe.png" alt="Jinbe" />
+          </div>
+          <div class="card-name">JINBE</div>
+          <div class="card-epithet">"Knight of the Sea"</div>
+          <div class="card-bounty">฿ 1,100,000,000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== THE GRAND LINE ========== -->
+  <section id="grand-line" class="grandline-section">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">THE GRAND LINE</h2>
+      <p class="section-subtitle">A Journey Through the Greatest Arcs</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item left animate-on-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-saga">East Blue Saga</span>
+          <h3>Romance Dawn</h3>
+          <p>A boy named Luffy sets out with a straw hat and a dream — to become the King of the Pirates. From a tiny
+            barrel adrift at sea, a legend is born.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right animate-on-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-saga">Alabasta Saga</span>
+          <h3>The Desert Kingdom</h3>
+          <p>The crew crosses the Grand Line and confronts Crocodile, one of the Seven Warlords. Vivi's homeland hangs
+            in the balance as war erupts under a burning sun.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left animate-on-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-saga">Water 7 Saga</span>
+          <h3>Enies Lobby</h3>
+          <p>To rescue Robin from the World Government, the Straw Hats storm the judicial island. Luffy declares war on
+            the entire world — and burns their flag.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right animate-on-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-saga">Summit War Saga</span>
+          <h3>Marineford</h3>
+          <p>The greatest war in history. Whitebeard, the Marines, and the Warlords clash as Luffy fights to save his
+            brother Ace. The world is shaken to its core.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left animate-on-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-saga">New World Saga</span>
+          <h3>Dressrosa & Whole Cake Island</h3>
+          <p>The crew challenges Emperors and warlords alike. Luffy's Gear Fourth awakens, alliances form, and the road
+            to the One Piece narrows.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right animate-on-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-saga">Wano Country Saga</span>
+          <h3>Land of the Samurai</h3>
+          <p>In the isolated nation of Wano, Luffy awakens the power of the Sun God Nika, defeats Kaidō, and liberates
+            an entire country. Joy Boy returns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-jolly-roger">☠️</div>
+    <p class="footer-quote">"I'm gonna be King of the Pirates!"</p>
+    <p class="footer-credit">A tribute to Eiichiro Oda's masterpiece</p>
+    <div class="footer-waves">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,40 C360,100 720,0 1080,60 C1260,80 1380,20 1440,40 L1440,100 L0,100 Z"
+          fill="rgba(212, 168, 71, 0.15)" />
+        <path d="M0,60 C240,10 480,90 720,50 C960,10 1200,80 1440,50 L1440,100 L0,100 Z"
+          fill="rgba(212, 168, 71, 0.08)" />
+      </svg>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
