@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenTask | Modern Task Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="zen-card">
+            <h1>ZenTask</h1>
+            
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="What needs to be done?" aria-label="New task title">
+                <button class="add-btn" id="addTaskBtn">Add</button>
+            </div>
+
+            <ul class="task-list" id="taskList">
+                <!-- Tasks will be injected here -->
+            </ul>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
