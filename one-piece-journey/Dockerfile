@@ -1,6 +1,4 @@
-FROM ubuntu:latest
-RUN apt-get update -y 
-RUN apt-get install nginx -y
+FROM nginx:latest
 WORKDIR /var/www/html
 COPY . /var/www/html/
 EXPOSE 90
